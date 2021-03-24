@@ -1,0 +1,34 @@
+{
+  "name": "carerix/cxrest-client",
+  "type": "library",
+  "minimum-stability": "stable",
+  "version": "2.0.0",
+  "license": "MIT",
+  "require": {
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-libxml": "*",
+    "ext-simplexml": "*",
+    "guzzlehttp/guzzle": "^6.5 || ^7.0"
+  },
+  "require-dev": {
+    "ext-dom": "*",
+    "ext-xmlwriter": "*",
+    "phpmd/phpmd": "^2.8",
+    "squizlabs/php_codesniffer": "^3.5",
+    "pdepend/pdepend": "^2.7",
+    "phpunit/phpunit": "^8.5",
+    "nette/php-generator": "^3.4",
+    "zf1/zend-console-getopt": "~1.12"
+  },
+  "autoload": {
+    "psr-4": {
+      "Carerix\\": "src/Carerix/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": { "Carerix\\Tests\\": "tests/Carerix/" }
+  },
+  "description": "Client library for easy access to Carerix REST API",
+  "homepage": "http://development.wiki.carerix.com/cxwiki/doku.php?id=cxrest"
+}
